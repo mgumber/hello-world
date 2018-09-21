@@ -1,0 +1,11 @@
+declare @bug integer
+set @bug = 27516
+select sum(RegHrs) Hrs
+  from tblFBHoursDetail
+  where ixbug = @bug
+
+  select distinct resourcename from tblfbhoursdetail
+  where ixbug = @bug
+
+  select dblstorypts from dbo.tblFB_Bug
+  where ixbug = @bug
