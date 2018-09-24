@@ -1,3 +1,4 @@
+use FogBugz_RO
 declare @bug integer
 set @bug = 27516
 select sum(RegHrs) Hrs
